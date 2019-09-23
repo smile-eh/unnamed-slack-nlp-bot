@@ -20,12 +20,10 @@ SLACK_CLIENT_SECRET = ""
 SLACK_VERIFICATION_TOKEN = ""
 SLACK_BOT_OAUTH = ""
 
-is_dev = False
-
 
 class Bot(object):
     """ Instantiates a Bot object to handle Slack onboarding interactions."""
-    def __init__(self):
+    def __init__(self, is_dev = False):
         super(Bot, self).__init__()
         self.name = "unnamed-slack-nlp-bot"
         self.emoji = ":robot_face:"
