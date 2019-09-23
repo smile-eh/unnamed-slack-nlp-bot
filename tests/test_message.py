@@ -12,10 +12,6 @@ class TestMessage:
 
     def test_update_message(self):
         message_obj = message.Message()
-        assert message_obj.text == ("Category\n"
-                     ">%s\n"
-                     "Summarized article sent to Google NLP\n"
-                     ">>>%s")
         message_obj.update_text_categorized("test/category", "Test Original Text")
         assert message_obj.text == ("Category\n"
                      ">test/category\n"
