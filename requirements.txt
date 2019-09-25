@@ -9,7 +9,7 @@ requests>=2.20.0
 six==1.10.0
 slackclient==1.0.2
 websocket-client==0.37.0
-Werkzeug==0.15
+Werkzeug==0.15.3
 sumy==0.7.0
 numpy==1.16.2
 google-cloud-language==1.2.0
